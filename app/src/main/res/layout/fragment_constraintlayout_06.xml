@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/spread_chain_01_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_02_a"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_01_b"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/spread_chain_01_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:text="B"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_02_b"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_01_a"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_01_c"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/spread_chain_01_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_02_c"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_01_b"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/spread_chain_02_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_03_a"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_02_b"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_01_a" />
+
+    <Button
+        android:id="@+id/spread_chain_02_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:text="B"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_03_b"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_02_a"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_02_c"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_01_b" />
+
+    <Button
+        android:id="@+id/spread_chain_02_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_03_c"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_02_b"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_01_c" />
+
+    <Button
+        android:id="@+id/spread_chain_03_a"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_04_a"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_03_b"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_02_a" />
+
+    <Button
+        android:id="@+id/spread_chain_03_b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:text="B"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_04_b"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_03_a"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_03_c"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_02_b" />
+
+    <Button
+        android:id="@+id/spread_chain_03_c"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_04_c"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_03_b"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_02_c" />
+
+    <Button
+        android:id="@+id/spread_chain_04_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_05_a"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_04_b"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_03_a" />
+
+    <Button
+        android:id="@+id/spread_chain_04_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:text="B"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_05_b"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_04_a"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_04_c"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_03_b" />
+
+    <Button
+        android:id="@+id/spread_chain_04_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/spread_chain_05_c"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_04_b"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_03_c" />
+
+    <Button
+        android:id="@+id/spread_chain_05_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_05_b"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_04_a" />
+
+    <Button
+        android:id="@+id/spread_chain_05_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:text="B"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_05_a"
+        app:layout_constraintRight_toLeftOf="@+id/spread_chain_05_c"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_04_b" />
+
+    <Button
+        android:id="@+id/spread_chain_05_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/spread_chain_05_b"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spread_chain_04_c" />
+
+</android.support.constraint.ConstraintLayout>

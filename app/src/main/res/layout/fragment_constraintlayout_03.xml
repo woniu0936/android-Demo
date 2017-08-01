@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--在其他布局中，visibility="gone"意味着这个控件在布局中消失了。但是在约束布局中，
+    他意味着他变成了一个点，而其他将该控件作为参考物的控件的约束还是有作用的-->
+
+    <TextView
+        android:id="@+id/tvGone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="测试gone"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:text="测试view的gone属性对约束控件的影响"
+        app:layout_constraintLeft_toRightOf="@id/tvGone"
+        app:layout_goneMarginLeft="12dp" />
+
+
+</android.support.constraint.ConstraintLayout>

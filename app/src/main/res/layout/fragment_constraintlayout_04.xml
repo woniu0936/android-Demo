@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--app:layout_constraintDimensionRatio="1:1",1：1的意思是width和height的比例为1：1，width:height，要【注意】的是被约束的尺寸需要设置为0dp。-->
+
+    <!--当水平或者垂直方向都被约束，那么可以将layout_width和layout_height都设置为0dp，然后就可以使用ratio了，如果想将比例设置为height：width，那么需要这样layout_constraintDimensionRatio="H,1:1"-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:text="测试将控件的宽高比设置成1:1"
+        android:textColor="@android:color/white"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

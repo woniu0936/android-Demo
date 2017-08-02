@@ -38,5 +38,11 @@ dependencies {
     compile 'me.yokeyword:fragmentation:1.0.9'
     // Swipeback is based on fragmentation. Refer to SwipeBackActivity/Fragment for your Customized SupportActivity/Fragment
     compile 'me.yokeyword:fragmentation-swipeback:1.0.9'
+//    https://github.com/airbnb/DeepLinkDispatch
+    compile('com.airbnb:deeplinkdispatch:3.1.0', {
+        exclude group: 'com.google.code.findbugs'
+    })
+    kapt 'com.airbnb:deeplinkdispatch-processor:3.1.0'
+
     testCompile 'junit:junit:4.12'
 }

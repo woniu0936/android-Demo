@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.woniu.demo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -20,18 +23,36 @@
         <activity android:name=".constrainlayout.ConstraintLayoutActivity" />
         <activity android:name=".deeplinkdispatch.DeepLinkDispatchActivity" />
         <activity android:name=".deeplinkdispatch.DeepLinkActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <!--<data android:scheme="https" />-->
-                <data android:scheme="https" android:host="join.gouhuoapp.com" />
+                <!-- <data android:scheme="https" /> -->
+                <data
+                    android:host="join.gouhuoapp.com"
+                    android:scheme="https" />
             </intent-filter>
-
         </activity>
+        <!--<activity android:name=".exoplayer.PlayerActivity" />-->
+        <!--<activity android:name=".exoplayer.SampleChooserActivity">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+
+                <!--<data android:scheme="http" />-->
+                <!--<data android:scheme="https" />-->
+                <!--<data android:scheme="content" />-->
+                <!--<data android:scheme="asset" />-->
+                <!--<data android:scheme="file" />-->
+                <!--<data android:host="*" />-->
+                <!--<data android:pathPattern=".*\\.exolist\\.json" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity android:name=".fragmentXML.FragmentXMLActivity"></activity>
     </application>
 
 </manifest>

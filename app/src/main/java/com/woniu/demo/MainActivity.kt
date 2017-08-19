@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         tvExoPlayer.click {
-//            startActivity<SampleChooserActivity>()
+            startActivity<SampleChooserActivity>()
         }
 
         tvFragment.click {

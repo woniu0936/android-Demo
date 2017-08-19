@@ -13,3 +13,15 @@ import android.view.View
 fun View.click(listener: (View) -> Unit) {
     setOnClickListener(listener)
 }
+
+fun View.show() {
+    visibility = View.VISIBLE
+}
+
+fun View.hide() {
+    visibility = View.GONE
+}
+
+fun View.toggleVisible() {
+    if (isShown) hide() else show()
+}
